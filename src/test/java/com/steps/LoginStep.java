@@ -33,10 +33,10 @@ public class LoginStep extends BaseClass {
 	@When("User login {string},{string},{string} and {string}")
 	public void user_login_and(String string, String string2, String string3, String string4) {
 
-		driver.findElement(By.id("username")).sendKeys("manivannan");
-		driver.findElement(By.id("email")).sendKeys("manimailupuli3696@gmail.com");
-		driver.findElement(By.id("password")).sendKeys("ManiV@3696");
-		driver.findElement(By.id("confirmPassword")).sendKeys("ManiV@3696");
+		driver.findElement(By.id("username")).sendKeys(string);
+		driver.findElement(By.id("email")).sendKeys(string2);
+		driver.findElement(By.id("password")).sendKeys(string3);
+		driver.findElement(By.id("confirmPassword")).sendKeys(string4);
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
@@ -47,7 +47,7 @@ public class LoginStep extends BaseClass {
 		WebElement element = driver.findElement(By.xpath("//h2[text()='Registration Successful']"));
 		String text = element.getText();
 		System.out.println(text);
-		Assert.assertEquals("verify","Registration Successful", text);
+		Assert.assertEquals("verify",string, text);
 		
 	}
 

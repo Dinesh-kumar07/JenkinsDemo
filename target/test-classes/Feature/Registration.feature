@@ -1,6 +1,6 @@
 Feature: Verifying Login Automation
 
-  Scenario Outline: Verifying User able to register the application
+  Scenario Outline: Verifying User 
     Given User  is on registration page
     When User login "<username>","<emailId>","<password>" and "<confirm password>"
     Then User should verify success message after Login "Registration Successful"

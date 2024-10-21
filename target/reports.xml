@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="9.942" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Verifying Login Automation" name="Verifying User able to register the application - #1.1" time="9.6">
+<testsuite name="Cucumber" time="8.388" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Verifying Login Automation" name="Verifying User - #1.1" time="8.159">
 <system-out><![CDATA[
 Given User  is on registration page.........................................passed
 When User login "manivannan","manimailupuli3696@gmail.com","ManiV@3696" and "ManiV@3696".passed
